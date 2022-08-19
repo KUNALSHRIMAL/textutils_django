@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Welcome to the text analizer. enter your text below</h1>
+    <form action="/analize" method="get">
+        <textarea name="text" id="" cols="30" rows="10" style="width: 688px; height: 100px;"></textarea><br>
+        <input type="checkbox" name="removepunk" id=""> remove puncuation <br>
+        <input type="checkbox" name="cap" id=""> captitalize first <br>
+        <input type="checkbox" name="fcap" id=""> full captitalize <br>
+        <input type="checkbox" name="newline" id=""> New line remover <br>
+        <input type="checkbox" name="extrasp" id=""> extra space remover <br>
+        <button type="submit">analize Text</button>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizing text</title>
+</head>
+<body>
+    <h1>Your analize text -{{purpose}}</h1>
+    <p>
+        {{analize_text}}
+    </p>
+</body>
+</html>
